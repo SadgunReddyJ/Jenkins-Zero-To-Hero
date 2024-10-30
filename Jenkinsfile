@@ -6,7 +6,7 @@ pipeline {
         docker { image 'sadgunreddy/image:latest' }
       }
       steps {
-        sh 'sudo apt-get install nginx'
+        sh 'nginx -V'
       }
     }
     stage('Front-end') {
